@@ -1,0 +1,327 @@
+/* ========================================
+Fixes Box Sizing
+======================================== */
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+/* ========================================
+List Styles, Margins, and Padding
+======================================== */
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* ========================================
+General CSS
+======================================== */
+
+body {
+    background-color: #065e99;
+    color: #C8C8C8;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    font-family: 'Merriweather', serif;  
+}
+
+header {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2d3945;
+}
+
+header h1 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 70px;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+h2 {
+    color: white;
+    font-size: 1.3em;
+}
+
+
+/* ========================================
+Form
+======================================== */
+
+form {
+    margin: 0 auto;
+}
+
+legend {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 100%;
+    padding: 30px 0;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    height: 50px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+	border: none;
+    border-radius: 5px;
+    padding: 15px; 
+    margin: 0;
+    outline: 0;
+    margin-bottom: 20px;
+    color: #2d3945;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-top: 10px;
+}
+
+#state select {
+    color: #2d3945;
+}
+
+#zip {
+    width: 40%;
+    max-width: 200px;
+    margin-bottom: 25px;
+}
+
+button {
+  font-size: 1.3em;
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px 0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #4ebbb5;
+}
+
+/* ========================================
+  Newsletter
+======================================== */
+
+#newsletter label {
+    display: inline-block;
+}
+  
+.group {
+    margin: 10px 0 20px;
+}
+
+.group label {
+    padding-left: 10px;
+}
+
+#newsletter input {
+    vertical-align: top;
+}
+
+/* ========================================
+  Lines
+======================================== */
+
+.line_two {
+    height: 9px;
+    border-top: 4px solid #2d3945;
+    border-bottom: 2px solid #2d3945;
+}
+
+.line_one {
+    height: 2px;
+    margin: 10px 0 5px; 
+    border-bottom: 2px solid #2d3945;
+}
+
+.line_one,
+.line_two {
+    width: 100%;
+}
+
+/* ========================================
+  Footer
+======================================== */
+
+footer {
+  font-size: .8em;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#copyright {
+    text-align: center;
+    font-style: italic;
+    height: 200px;
+    
+}
+
+/* ========================================
+  Focus States
+======================================== */
+
+input:focus,
+#state select:focus,
+textarea:focus {
+  border: #4ebbb5 solid 2px;
+  background-color: #2d3945;
+  transition: background-color 1s ease;
+  color: white;
+}
+
+
+/* ========================================
+  Placeholders
+======================================== */
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: .75em;
+    font-weight: 300;
+    font-style: italic;
+    text-align: right;
+    line-height: 20px;
+    color: #2d3945;
+  }
+::-moz-placeholder { /* Firefox 19+ */
+    font-size: .75em;
+    font-weight: 300;
+    font-style: italic;
+    text-align: right;
+    line-height: 20px;
+    color: #2d3945;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-size: .75em;
+    font-weight: 300;
+    font-style: italic;
+    text-align: right;
+    line-height: 20px;
+    color: #2d3945;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-size: .75em;
+    font-weight: 300;
+    font-style: italic;
+    text-align: right;
+    line-height: 20px;
+    color: #2d3945;
+}
+
+/* Remove Placeholder on focus */
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+  transition-delay: 2s;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+  transition-delay: 2s;
+} /* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent;
+  transition-delay: 2s;
+} /* FF 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+  transition-delay: 2s;
+} /* IE 10+ */
+
+
+/* ========================================
+  Media Queries
+======================================== */
+
+@media screen and (min-width: 768px) {
+
+    body {
+      background-size: 100%;
+    }
+  
+    .wrapper {
+      margin: 0 auto;
+      max-width: 600px;
+    }
+  
+    .intro h2 {
+      font-size: 1.5em;
+    }
+  
+    .intro p {
+      margin-bottom: 30px;
+    }
+  
+    legend {
+      padding-top: 50px;
+    }
+  
+    #contact-info label {
+      width: 150px;
+      line-height: 50px;
+      display: inline-block;
+    }
+
+    #zip {
+        margin-bottom: 50px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    #state,
+    select {
+      width: 440px;
+      display: inline-block;
+    }
+  }
+  
