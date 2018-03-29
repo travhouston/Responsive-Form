@@ -155,7 +155,11 @@ button {
 #newsletter label {
     display: inline-block;
 }
-  
+
+#newsletter legend {
+    padding-bottom: 10px;
+}
+
 .group {
     margin: 10px 0 20px;
 }
